@@ -318,16 +318,20 @@ local function runAutoSellLimited()
 
     if not g.selected or not g.unselected then return end
     
+    local lastToggleTime = 0
     local function updateAutoSell()
-        if not _G.Config.AutoSellLimited then return end
+        if not _G.Config.AutoSellLimited or (tick() - lastToggleTime < 0.25) then return end
+        
         local e = ws:GetAttribute("ActiveEvents") or ""
         
         if string.find(e, "HalloweenEvent") then
             if not g.selected.Enabled then
+                lastToggleTime = tick()
                 pcall(rem.FireServer, rem, "Limited")
             end
         else
             if not g.unselected.Enabled then
+                lastToggleTime = tick()
                 pcall(rem.FireServer, rem, "Limited")
             end
         end
@@ -370,7 +374,11 @@ local function runAutoSellSecret()
         return
     end
 
+    local lastToggleTime = 0
     local function toggleSecret()
+        if tick() - lastToggleTime < 0.25 then return end
+        lastToggleTime = tick()
+        
         pcall(function()
             autoSellRemote:FireServer("Secret")
         end)
