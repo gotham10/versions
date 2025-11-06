@@ -17,19 +17,9 @@ end
 local p = game:GetService("Players").LocalPlayer
 if not _G.Config or not table.find(_G.Config.wl, p.Name) then return end
 
--- This URL should point to the folder where you store the feature files
--- For example: "https://raw.githubusercontent.com/gotham10/versions/main/features/"
-local baseURL = "YOUR_GITHUB_RAW_URL/features/"
+local baseURL = "https://raw.githubusercontent.com/gotham10/versions/main/main/features/"
 
-local features = {
-    "seed_buyer.lua",
-    "gear_buyer.lua",
-    "autosell_limited.lua",
-    "autosell_secret.lua",
-    "auto_brainrot.lua",
-    "auto_accept_gifts.lua",
-    "auto_buy_crate.lua"
-}
+local features = {"seed_buyer.lua", "gear_buyer.lua", "autosell_limited.lua", "autosell_secret.lua", "auto_brainrot.lua", "auto_accept_gifts.lua", "auto_buy_crate.lua"}
 
 for _, featureFile in ipairs(features) do
     local success, err = pcall(function()
