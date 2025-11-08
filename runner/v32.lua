@@ -1,5 +1,5 @@
 _G.Config = {}
-_G.Config.wl = {"DARK_ENCHANTEDD","pvbfarmeracc11","pvbfarmeracc12","pvbfarmeracc13","pvbfarmeracc14","pvbfarmeracc15","pvbfarmeracc21","pvbfarmeracc22","pvbfarmeracc23","pvbfarmeracc24","pvbfarmeracc25","pvbfarmeracc26","pvbfarmeracc27","pvbfarmeracc28","pvbfarmeracc29","pvbfarmeracc30"}
+_G.Config.wl = {"pvbfarmeracc1","pvbfarmeracc2","pvbfarmeracc3","pvbfarmeracc4","pvbfarmeracc5","pvbfarmeracc6","pvbfarmeracc7","pvbfarmeracc8","pvbfarmeracc9","pvbfarmeracc10","pvbfarmeracc11","pvbfarmeracc12","pvbfarmeracc13","pvbfarmeracc14","pvbfarmeracc15","pvbfarmeracc16","pvbfarmeracc17","pvbfarmeracc18","pvbfarmeracc19","pvbfarmeracc20","pvbfarmeracc21","pvbfarmeracc22","pvbfarmeracc23","pvbfarmeracc24","pvbfarmeracc25","pvbfarmeracc26","pvbfarmeracc27","pvbfarmeracc28","pvbfarmeracc29","pvbfarmeracc30"}
 _G.Config.SEED_MIN_PRICE = 200
 _G.Config.GEAR_MIN_PRICE = 7500
 _G.Config.AutoSeedBuyer = true
